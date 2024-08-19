@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    /* background: rgba(94, 131, 219, 0.537);
+    background: linear-gradient(180deg, rgba(170,108,234,1) 0%, rgba(93,208,175,1) 93%);  */
+    background: rgb(234,108,120);
+    background: linear-gradient(180deg, rgba(234,108,120,1) 0%, rgba(93,135,208,1) 100%); 
+}
+
+.box{
+    border: 2px solid rgb(35, 34, 34);
+    border-radius: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 85px;
+    width: 480px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.box-display{
+    position: relative;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(159, 105, 105);
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 3rem;
+    font-weight: 600;
+    color: black;
+
+}
+
+.box-display-input{
+    display: flex;
+    height: 60%;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.box-display-input-1{
+    margin-left: auto;
+    margin-right: 1rem;
+   margin-top: auto;
+
+}
+
+
+.box-display-ans{
+    display: flex;
+    flex-grow: 1;
+    background-color: white;
+}
+.box-display-ans-1{
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 1rem;
+    
+}
+.box-operation{
+    flex-grow: 1;
+    background-color: rgb(12, 12, 12);
+    display: grid;
+    gap: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1.4rem;
+    padding-bottom: 0.3rem;
+    grid-template-columns: repeat(4 , 1fr);
+    border: 1px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 2rem;
+    
+}
+/* .box-operation button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+} */
+.equal-btn{
+    grid-column: 3;
+    grid-column-end: 5;
+    transition: backgroundcolor 100ms ease;
+}
+.box .box-operation div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid #555;  */
+    background-color: rgb(11, 10, 10) ;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 3px 110px lightblue;
+    /* color: rgb(35, 32, 32); */
+
+
+}
