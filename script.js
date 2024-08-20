@@ -9,10 +9,10 @@ let inputDataDisplay = "" ;
 let inputDataCalc = "";
 
 cancel.onclick = function(){
-    input.innerHTML = '' ;
-    ans.innerHTML = '' ;
+    input.innerHTML = "" ;
+    ans.innerHTML = "" ;
     inputDataDisplay = "" ;
-    inputDataCalc = "0" ;
+    inputDataCalc = "" ;
 }
 
 cross.onclick = function(){
@@ -55,20 +55,22 @@ equal.onclick = function(){
           value = value.toFixed(3) ;
         
         }
-       ans.innerHTML = value ;
+         ans.innerHTML = value ;        
          inputDataDisplay = "";
-         inputDataCalc = "0" ;
+         inputDataCalc = "" ;
      }catch(error){
         console.log(`error is ${error}`) ;
          ans.innerHTML = "ERROR" ;
          inputDataDisplay = "";
-         inputDataCalc = "0" ;
+         inputDataCalc = "" ;
      }
 
      setTimeout(()=>{
          equal.style.backgroundColor = "black" ;
      } , 170) ;
 }
+
+
 
 
 
